@@ -2,14 +2,15 @@
 
 [![Etapa Júnior](../../actions/workflows/corrigir.yml/badge.svg)](../../actions/workflows/corrigir.yml)
 [![Etapa Pleno](../../actions/workflows/corrigir-pleno.yml/badge.svg)](../../actions/workflows/corrigir-pleno.yml)
+[![Etapa Sênior](../../actions/workflows/corrigir-senior.yml/badge.svg)](../../actions/workflows/corrigir-senior.yml)
 
 > ✏️ Troque esta linha por uma frase sua sobre o projeto. Exemplo: "Projeto em que analisei a carteira de uma financeira fictícia para encontrar onde está o risco de inadimplência."
 
-Projeto de portfólio feito na trilha de SQL do **TrainingDevJob**. Todas as consultas são corrigidas automaticamente a cada envio. Cada etapa tem o seu selo, que fica verde quando todas as respostas dela estão certas. O selo Pleno fica vermelho até você fazer essa etapa: isso é esperado.
+Projeto de portfólio feito na trilha de SQL do **TrainingDevJob**. Todas as consultas são corrigidas automaticamente a cada envio. Cada etapa tem o seu selo, que fica verde quando todas as respostas dela estão certas. Os selos Pleno e Sênior ficam vermelhos até você fazer essas etapas: isso é esperado.
 
 ## O problema
 
-A gerência de risco de uma financeira quer um retrato da carteira de crédito: quanto foi emprestado, em quais produtos, onde está a inadimplência e quais clientes precisam de cobrança. Os dados ficam num banco PostgreSQL com sete tabelas:
+A gerência de risco de uma financeira quer um retrato da carteira de crédito: quanto foi emprestado, em quais produtos, onde está a inadimplência e quais clientes precisam de cobrança. Os dados ficam num banco PostgreSQL com onze tabelas:
 
 | Tabela | O que guarda |
 |---|---|
@@ -20,6 +21,10 @@ A gerência de risco de uma financeira quer um retrato da carteira de crédito: 
 | `pagamentos` | Cada pagamento de parcela, com data, valor e canal (`pix`, `boleto`, `debito`) |
 | `pagamentos_brutos` | Os pagamentos como chegaram do sistema, antes da limpeza (usada na etapa Pleno) |
 | `eventos_app` | O que os clientes fizeram no app em 2026: acessos, simulações, propostas e assinaturas (etapa Pleno) |
+| `historico_renda` | Histórico da renda de cada cliente, com período de validade (etapa Sênior) |
+| `snapshots_cadastro` | Foto mensal da renda de cada cliente em 2026 (etapa Sênior) |
+| `contrato_titulares` | Quem responde por cada contrato: titular e avalista (etapa Sênior) |
+| `indicacoes` | Quem indicou cada cliente ao banco (etapa Sênior) |
 
 ## As perguntas (etapa Júnior)
 
@@ -57,6 +62,23 @@ Os arquivos ficam em [`sql/pleno/`](sql/pleno), e o relatório escrito em [`docs
 | 9 | Funil do app | [`09_funil_do_app.sql`](sql/pleno/09_funil_do_app.sql) |
 | 10 | Retenção por coorte | [`10_retencao_por_coorte.sql`](sql/pleno/10_retencao_por_coorte.sql) |
 
+## As perguntas (etapa Sênior)
+
+Os arquivos ficam em [`sql/senior/`](sql/senior), e o relatório escrito em [`docs/senior.md`](docs/senior.md). Para corrigir no seu computador: `npm run test:senior`.
+
+| # | Pergunta | Arquivo |
+|---|---|---|
+| 1 | Testes de qualidade | [`01_testes_de_qualidade.sql`](sql/senior/01_testes_de_qualidade.sql) |
+| 2 | Pagamentos limpos | [`02_pagamentos_limpos.sql`](sql/senior/02_pagamentos_limpos.sql) |
+| 3 | Reconciliação com a carga | [`03_reconciliacao.sql`](sql/senior/03_reconciliacao.sql) |
+| 4 | Renda na data da contratação | [`04_renda_na_contratacao.sql`](sql/senior/04_renda_na_contratacao.sql) |
+| 5 | Exposição por cliente | [`05_exposicao_por_cliente.sql`](sql/senior/05_exposicao_por_cliente.sql) |
+| 6 | Inadimplência por safra | [`06_inadimplencia_por_safra.sql`](sql/senior/06_inadimplencia_por_safra.sql) |
+| 7 | Variáveis sem vazamento | [`07_variaveis_point_in_time.sql`](sql/senior/07_variaveis_point_in_time.sql) |
+| 8 | Tabela do modelo de risco | [`08_tabela_do_modelo.sql`](sql/senior/08_tabela_do_modelo.sql) |
+| 9 | Redes de indicação | [`09_rede_de_indicacao.sql`](sql/senior/09_rede_de_indicacao.sql) |
+| 10 | Ranking de risco das agências | [`10_ranking_de_risco.sql`](sql/senior/10_ranking_de_risco.sql) |
+
 ## Conclusões
 
 > ✏️ Escreva aqui de 3 a 5 conclusões com números tirados das suas consultas. Exemplo de formato: "A agência X tem a maior taxa de inadimplência (Y%), quase o dobro da média."
@@ -76,6 +98,7 @@ docker compose up -d      # sobe o PostgreSQL com a base carregada
 npm install               # instala o corretor (uma vez só)
 npm test                  # corrige a etapa Júnior e gera os CSVs em resultados/
 npm run test:pleno        # corrige a etapa Pleno
+npm run test:senior       # corrige a etapa Sênior
 ```
 
 ## Ferramentas

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "node testes/corrigir.mjs",
-    "test:pleno": "node testes/corrigir.mjs --etapa pleno"
+    "test:pleno": "node testes/corrigir.mjs --etapa pleno",
+    "test:senior": "node testes/corrigir.mjs --etapa senior"
   },
   "engines": { "node": ">=20" },
   "devDependencies": {

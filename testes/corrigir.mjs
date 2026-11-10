@@ -1,5 +1,5 @@
 // Correção automática do projeto. Roda no GitHub Actions a cada push e no seu computador com
-// `npm test` (etapa Júnior) ou `npm run test:pleno` (etapa Pleno).
+// `npm test` (etapa Júnior), `npm run test:pleno` (Pleno) ou `npm run test:senior` (Sênior).
 // Para cada arquivo da etapa, executa a consulta na base e compara com a impressão digital esperada.
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { abrirBase, impressao, rodar, semComentarios } from "./comum.mjs";
@@ -8,11 +8,12 @@ const raiz = new URL("../", import.meta.url);
 const ETAPAS = {
   junior: { esperado: "testes/esperado.json", pasta: "sql/", relatorio: ["README.md", "docs/decisoes.md"] },
   pleno: { esperado: "testes/esperado-pleno.json", pasta: "sql/pleno/", relatorio: ["docs/pleno.md"] },
+  senior: { esperado: "testes/esperado-senior.json", pasta: "sql/senior/", relatorio: ["docs/senior.md"] },
 };
 const i = process.argv.indexOf("--etapa");
 const nomeEtapa = i >= 0 ? process.argv[i + 1] : "junior";
 const etapa = ETAPAS[nomeEtapa];
-if (!etapa) { console.log(`Etapa desconhecida: ${nomeEtapa}. Use junior ou pleno.`); process.exit(1); }
+if (!etapa) { console.log(`Etapa desconhecida: ${nomeEtapa}. Use junior, pleno ou senior.`); process.exit(1); }
 const esperado = JSON.parse(readFileSync(new URL(etapa.esperado, raiz), "utf8"));
 const db = await abrirBase(new URL("dados/base.sql", raiz));
 mkdirSync(new URL(`resultados/${etapa.pasta.replace(/^sql\//, "")}`, raiz), { recursive: true });

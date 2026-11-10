@@ -1,0 +1,172 @@
+{
+  "etapa": "Sênior",
+  "perguntas": {
+    "01_testes_de_qualidade": {
+      "colunas": [
+        "ordem",
+        "regra",
+        "violacoes"
+      ],
+      "linhas": 4,
+      "ordenado": true,
+      "conjunto": "830028316f868ff517a5948c",
+      "emOrdem": "d25834cb158585317131ccec",
+      "porColuna": {
+        "ordem": "a065677347c05d063899e365",
+        "regra": "ccc3e2cae8519ee8b758e456",
+        "violacoes": "e90be156777392c5040ddf20"
+      }
+    },
+    "02_pagamentos_limpos": {
+      "colunas": [
+        "parcela_id",
+        "data_pagamento",
+        "valor_pago",
+        "canal"
+      ],
+      "linhas": 352,
+      "ordenado": false,
+      "conjunto": "5151c1a1bcad4c22d1853a2c",
+      "porColuna": {
+        "parcela_id": "f378c0c3ed432d603e8fca34",
+        "data_pagamento": "be0788a97b2debbd4bc950ee",
+        "valor_pago": "8994712eab8dff9c184f3bda",
+        "canal": "b1375ae71ea03b6112c6d6cb"
+      }
+    },
+    "03_reconciliacao": {
+      "colunas": [
+        "parcela_id",
+        "valor_pagamentos",
+        "valor_carga"
+      ],
+      "linhas": 19,
+      "ordenado": false,
+      "conjunto": "8a42ef4675842a07bde096ce",
+      "porColuna": {
+        "parcela_id": "023d5a0df254fb59c90f5934",
+        "valor_pagamentos": "1e7eba8515c306a00c3bb1c1",
+        "valor_carga": "3e77f04c6d345dca55b60aa1"
+      }
+    },
+    "04_renda_na_contratacao": {
+      "colunas": [
+        "contrato_id",
+        "renda_na_data",
+        "comprometimento_pct"
+      ],
+      "linhas": 130,
+      "ordenado": false,
+      "conjunto": "d28bb16b45e42ae9ccc99454",
+      "porColuna": {
+        "contrato_id": "b0974b8a6adb7c092825ceb6",
+        "renda_na_data": "927f494a0a8952304b485fbb",
+        "comprometimento_pct": "77f2520d795999486c40a365"
+      }
+    },
+    "05_exposicao_por_cliente": {
+      "colunas": [
+        "cliente_id",
+        "exposicao"
+      ],
+      "linhas": 82,
+      "ordenado": false,
+      "conjunto": "278fb18e692155ebf54537b8",
+      "porColuna": {
+        "cliente_id": "604ae73ba59d3fc1acda1d65",
+        "exposicao": "589ef6a1c2c1af8dbf46c94a"
+      }
+    },
+    "06_inadimplencia_por_safra": {
+      "colunas": [
+        "safra",
+        "expostos",
+        "inad_30",
+        "taxa_pct"
+      ],
+      "linhas": 10,
+      "ordenado": true,
+      "conjunto": "d6eaec46992f542bf8ea6e44",
+      "emOrdem": "6fe948f150ec630abdd16c15",
+      "porColuna": {
+        "safra": "2cc2264e5cea336ccae48f0b",
+        "expostos": "50572d3c6309baf7da5eb5e5",
+        "inad_30": "07dd17d886d5fb55f3812212",
+        "taxa_pct": "fe9573060f7192606f932d99"
+      }
+    },
+    "07_variaveis_point_in_time": {
+      "colunas": [
+        "contrato_id",
+        "contratos_antes",
+        "atrasos_antes",
+        "renda_na_data",
+        "eventos_30d"
+      ],
+      "linhas": 38,
+      "ordenado": false,
+      "conjunto": "d972bb89d53fa0e1f7b99912",
+      "porColuna": {
+        "contrato_id": "22a750a41d4f3c5e1a1b542e",
+        "contratos_antes": "ae073832cce623d271ce0abf",
+        "atrasos_antes": "c7152ba4f980b86f89eed406",
+        "renda_na_data": "0003cf6273e6f4910ebcffd7",
+        "eventos_30d": "1f8b1bdcac95d8780b35732a"
+      }
+    },
+    "08_tabela_do_modelo": {
+      "colunas": [
+        "cliente_id",
+        "contratos",
+        "prop_inadimplente",
+        "maior_atraso_dias",
+        "usou_app"
+      ],
+      "linhas": 78,
+      "ordenado": false,
+      "conjunto": "2a15bd5827085dc55789c0e2",
+      "porColuna": {
+        "cliente_id": "706943cd4f26db9e183339ce",
+        "contratos": "25343059a4a3e12753ed3a6e",
+        "prop_inadimplente": "5aa2201bbb7ac7e72cd0be4e",
+        "maior_atraso_dias": "e994bdfe0371dab55d6d36c0",
+        "usou_app": "56384b23da4c7fe5f0f15861"
+      }
+    },
+    "09_rede_de_indicacao": {
+      "colunas": [
+        "raiz",
+        "rede",
+        "maior_nivel"
+      ],
+      "linhas": 16,
+      "ordenado": false,
+      "conjunto": "2a7ba798837274190ebb9d9d",
+      "porColuna": {
+        "raiz": "afa3644d3bf9f79b781f58a6",
+        "rede": "48a65e4ce45c6bd2f883b4e3",
+        "maior_nivel": "90dd997460207d017bab9247"
+      }
+    },
+    "10_ranking_de_risco": {
+      "colunas": [
+        "agencia",
+        "expostos",
+        "inad_30",
+        "taxa_pct",
+        "posicao"
+      ],
+      "linhas": 8,
+      "ordenado": true,
+      "conjunto": "82ff0e9703b92b8a58b574dd",
+      "emOrdem": "186862a650dd52ca264239a8",
+      "porColuna": {
+        "agencia": "88eb6f1e10dfb240477ae2a7",
+        "expostos": "5140dc95b4a13d1e563c0ab5",
+        "inad_30": "d5c90b976bf144050591f1e2",
+        "taxa_pct": "8f02677b74e856cef0139c95",
+        "posicao": "1e7f5c1600521574c41945df"
+      }
+    }
+  }
+}
