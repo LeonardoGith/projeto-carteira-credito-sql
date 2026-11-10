@@ -30,10 +30,10 @@ Cada pergunta tem um arquivo em [`sql/`](sql). O pedido completo e as colunas es
 | 3 | Contratos por status | [`03_contratos_por_status.sql`](sql/03_contratos_por_status.sql) |
 | 4 | Inadimplência por agência | [`04_inadimplencia_por_agencia.sql`](sql/04_inadimplencia_por_agencia.sql) |
 | 5 | Clientes com parcelas em aberto | [`05_clientes_em_atraso.sql`](sql/05_clientes_em_atraso.sql) |
-| 6 | Os 10 maiores contratos inadimplentes | [`06_maiores_inadimplentes.sql`](sql/06_maiores_inadimplentes.sql) |
+| 6 | Os 10 maiores inadimplentes de pessoa física | [`06_maiores_inadimplentes.sql`](sql/06_maiores_inadimplentes.sql) |
 | 7 | Clientes que nunca contrataram | [`07_clientes_sem_contrato.sql`](sql/07_clientes_sem_contrato.sql) |
 | 8 | Perfil de renda dos clientes | [`08_perfil_de_renda.sql`](sql/08_perfil_de_renda.sql) |
-| 9 | Recebimento por canal | [`09_recebimento_por_canal.sql`](sql/09_recebimento_por_canal.sql) |
+| 9 | Recebimento por canal em 2026 | [`09_recebimento_por_canal.sql`](sql/09_recebimento_por_canal.sql) |
 | 10 | Atraso médio por produto | [`10_atraso_medio_por_produto.sql`](sql/10_atraso_medio_por_produto.sql) |
 
 Os resultados de cada consulta ficam em [`resultados/`](resultados), em CSV, gerados pelo `npm test`.

@@ -36,14 +36,16 @@
       "colunas": [
         "status",
         "contratos",
+        "clientes",
         "total_emprestado"
       ],
       "linhas": 4,
       "ordenado": false,
-      "conjunto": "d773f6b2f84e70eab2ca6115",
+      "conjunto": "03a602ab13bcae866d33a3c8",
       "porColuna": {
         "status": "80f38af860aa71955e1119fd",
         "contratos": "e09892b8592aa6fb28d7ab33",
+        "clientes": "96a1f1c10921ef1bcee23c90",
         "total_emprestado": "ed3fa518c764b11c88797471"
       }
     },
@@ -74,11 +76,11 @@
       ],
       "linhas": 31,
       "ordenado": false,
-      "conjunto": "341cda68824c3a2928c2db5d",
+      "conjunto": "ba218e7c70bda539e99110c7",
       "porColuna": {
         "cliente_id": "fd0243a4562e8843850b8c2b",
         "nome": "a302dea4740d2205d9b82a65",
-        "telefone": "85f4c9ffaeb8d71e59b0bd22",
+        "telefone": "af080902448e0cf229cfa64e",
         "parcelas_em_aberto": "cb1e876176ed3c492d1c5566",
         "valor_em_aberto": "51b1e8c24c084dc9dc886d0d"
       }
@@ -92,13 +94,13 @@
       ],
       "linhas": 10,
       "ordenado": true,
-      "conjunto": "3551bb6de9ba17e8ec935110",
-      "emOrdem": "a300171bc7f90b62adc12aba",
+      "conjunto": "826ea5af667d2e8f0dda462f",
+      "emOrdem": "1b98956f75fcfb8811eb1582",
       "porColuna": {
-        "contrato_id": "8aaf729215b4e78cea02da1e",
-        "cliente": "e8d3247b6d651b4bae4e9bf3",
-        "agencia": "4d5d7ad2c1bf0f724d8dacf3",
-        "valor_emprestado": "f5d2b950b8c6c15063e3e28d"
+        "contrato_id": "55992f30aabea8bb9e1febea",
+        "cliente": "23df990240e8e22de3e80457",
+        "agencia": "d9e443065ec33c96cda4f9eb",
+        "valor_emprestado": "40cfce75c3c9c1fb749a8cba"
       }
     },
     "07_clientes_sem_contrato": {
@@ -139,11 +141,11 @@
       ],
       "linhas": 3,
       "ordenado": false,
-      "conjunto": "d99c6b0e080138fa4660cd82",
+      "conjunto": "324d2125cdb532121b545042",
       "porColuna": {
         "canal": "837983689e1f73bd4f263bcd",
-        "pagamentos": "14c0eb99775fa9bd9ac04fd4",
-        "total_recebido": "34e383132b040c02d5f04c86"
+        "pagamentos": "78ad3a89a2bb12f525d7a1fe",
+        "total_recebido": "ff058e87a21715c50d0e47d7"
       }
     },
     "10_atraso_medio_por_produto": {
