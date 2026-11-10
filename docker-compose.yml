@@ -1,0 +1,14 @@
+# Sobe um PostgreSQL com a base do projeto já carregada.
+# Uso: docker compose up -d   (na primeira vez, a base é criada a partir de dados/base.sql)
+# Conexão: host localhost, porta 5432, banco carteira, usuário aluno, senha aluno
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: carteira
+      POSTGRES_USER: aluno
+      POSTGRES_PASSWORD: aluno
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./dados/base.sql:/docker-entrypoint-initdb.d/01_base.sql:ro

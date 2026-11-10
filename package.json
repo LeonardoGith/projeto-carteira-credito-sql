@@ -1,0 +1,14 @@
+{
+  "name": "projeto-carteira-credito-sql",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Análise da carteira de crédito em SQL: projeto de portfólio do TrainingDevJob.",
+  "type": "module",
+  "scripts": {
+    "test": "node testes/corrigir.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.15"
+  }
+}

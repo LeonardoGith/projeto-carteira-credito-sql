@@ -1,0 +1,165 @@
+{
+  "etapa": "Júnior",
+  "perguntas": {
+    "01_visao_geral": {
+      "colunas": [
+        "total_contratos",
+        "total_emprestado",
+        "ticket_medio"
+      ],
+      "linhas": 1,
+      "ordenado": false,
+      "conjunto": "f10eb750807e50b88e11895c",
+      "porColuna": {
+        "total_contratos": "037a87372ad678993148e2ce",
+        "total_emprestado": "09a5c1492aeb0cab68daafea",
+        "ticket_medio": "3f54929b4c49dbc06536417d"
+      }
+    },
+    "02_carteira_por_produto": {
+      "colunas": [
+        "produto",
+        "contratos",
+        "total_emprestado"
+      ],
+      "linhas": 4,
+      "ordenado": true,
+      "conjunto": "59be6864a65eed97bec570ad",
+      "emOrdem": "45be4669fe519eb862f6b37b",
+      "porColuna": {
+        "produto": "c3daa2f4f49190b3510204f9",
+        "contratos": "0a4bcb352226d00b28352699",
+        "total_emprestado": "69003366671b7395a6d1067f"
+      }
+    },
+    "03_contratos_por_status": {
+      "colunas": [
+        "status",
+        "contratos",
+        "total_emprestado"
+      ],
+      "linhas": 4,
+      "ordenado": false,
+      "conjunto": "d773f6b2f84e70eab2ca6115",
+      "porColuna": {
+        "status": "80f38af860aa71955e1119fd",
+        "contratos": "e09892b8592aa6fb28d7ab33",
+        "total_emprestado": "ed3fa518c764b11c88797471"
+      }
+    },
+    "04_inadimplencia_por_agencia": {
+      "colunas": [
+        "agencia",
+        "contratos",
+        "inadimplentes",
+        "taxa_inadimplencia"
+      ],
+      "linhas": 8,
+      "ordenado": false,
+      "conjunto": "eece036b9868e35903b21d47",
+      "porColuna": {
+        "agencia": "88eb6f1e10dfb240477ae2a7",
+        "contratos": "c13f9db69ebb264ebab26a39",
+        "inadimplentes": "108119c0cb55d509c51e9e4b",
+        "taxa_inadimplencia": "3fea227cdd58e70fabe0b7f4"
+      }
+    },
+    "05_clientes_em_atraso": {
+      "colunas": [
+        "cliente_id",
+        "nome",
+        "telefone",
+        "parcelas_em_aberto",
+        "valor_em_aberto"
+      ],
+      "linhas": 31,
+      "ordenado": false,
+      "conjunto": "341cda68824c3a2928c2db5d",
+      "porColuna": {
+        "cliente_id": "fd0243a4562e8843850b8c2b",
+        "nome": "a302dea4740d2205d9b82a65",
+        "telefone": "85f4c9ffaeb8d71e59b0bd22",
+        "parcelas_em_aberto": "cb1e876176ed3c492d1c5566",
+        "valor_em_aberto": "51b1e8c24c084dc9dc886d0d"
+      }
+    },
+    "06_maiores_inadimplentes": {
+      "colunas": [
+        "contrato_id",
+        "cliente",
+        "agencia",
+        "valor_emprestado"
+      ],
+      "linhas": 10,
+      "ordenado": true,
+      "conjunto": "3551bb6de9ba17e8ec935110",
+      "emOrdem": "a300171bc7f90b62adc12aba",
+      "porColuna": {
+        "contrato_id": "8aaf729215b4e78cea02da1e",
+        "cliente": "e8d3247b6d651b4bae4e9bf3",
+        "agencia": "4d5d7ad2c1bf0f724d8dacf3",
+        "valor_emprestado": "f5d2b950b8c6c15063e3e28d"
+      }
+    },
+    "07_clientes_sem_contrato": {
+      "colunas": [
+        "nome",
+        "cidade",
+        "data_cadastro"
+      ],
+      "linhas": 12,
+      "ordenado": false,
+      "conjunto": "a74249f716c61caa65533a45",
+      "porColuna": {
+        "nome": "b1432d7600d4cf43bafff1fd",
+        "cidade": "b0fc9791075f6fc870892b82",
+        "data_cadastro": "400d00671a40ebffbef9fff0"
+      }
+    },
+    "08_perfil_de_renda": {
+      "colunas": [
+        "faixa",
+        "clientes",
+        "renda_media"
+      ],
+      "linhas": 3,
+      "ordenado": false,
+      "conjunto": "a8fc518225b3f428c44872e3",
+      "porColuna": {
+        "faixa": "1850d142a3827112faba6e55",
+        "clientes": "979220189a1652553e70431e",
+        "renda_media": "3b54b53dbb40926f81f2f7bb"
+      }
+    },
+    "09_recebimento_por_canal": {
+      "colunas": [
+        "canal",
+        "pagamentos",
+        "total_recebido"
+      ],
+      "linhas": 3,
+      "ordenado": false,
+      "conjunto": "d99c6b0e080138fa4660cd82",
+      "porColuna": {
+        "canal": "837983689e1f73bd4f263bcd",
+        "pagamentos": "14c0eb99775fa9bd9ac04fd4",
+        "total_recebido": "34e383132b040c02d5f04c86"
+      }
+    },
+    "10_atraso_medio_por_produto": {
+      "colunas": [
+        "produto",
+        "pagamentos_atrasados",
+        "atraso_medio_dias"
+      ],
+      "linhas": 4,
+      "ordenado": false,
+      "conjunto": "ac1233c2859bcdefaf8f332f",
+      "porColuna": {
+        "produto": "c3daa2f4f49190b3510204f9",
+        "pagamentos_atrasados": "aa088b49c0000741ecfbf35e",
+        "atraso_medio_dias": "62bddcb00bab9f1ad07d1c26"
+      }
+    }
+  }
+}
