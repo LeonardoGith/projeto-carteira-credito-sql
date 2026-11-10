@@ -5,7 +5,8 @@
   "description": "Análise da carteira de crédito em SQL: projeto de portfólio do TrainingDevJob.",
   "type": "module",
   "scripts": {
-    "test": "node testes/corrigir.mjs"
+    "test": "node testes/corrigir.mjs",
+    "test:pleno": "node testes/corrigir.mjs --etapa pleno"
   },
   "engines": { "node": ">=20" },
   "devDependencies": {
